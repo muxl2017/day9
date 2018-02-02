@@ -1,0 +1,56 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1517557817574" stop="1517557817623">
+  <name>scripts.test_001</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1517557817574" status="passed" stop="1517557817580">
+      <name>Test_001.test_001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="9044-MainThread"/>
+        <label name="host" value="LAPTOP-2I2TCSK1"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1517557817580" status="passed" stop="1517557817580">
+          <name>这是第一个用例</name>
+          <title>这是第一个用例</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1517557817581" status="failed" stop="1517557817623">
+      <name>Test_001.test_002</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;scripts.test_001.Test_001 object at 0x00000239BB143898&gt;
+
+    @allure.step(title="这是第二个用例")
+    @pytest.allure.severity(pytest.allure.severity_level.CRITICAL)
+    def test_002(self):
+&gt;       assert 0
+E       assert 0
+
+scripts\test_001.py:12: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="9044-MainThread"/>
+        <label name="host" value="LAPTOP-2I2TCSK1"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1517557817582" status="failed" stop="1517557817588">
+          <name>这是第二个用例</name>
+          <title>这是第二个用例</title>
+          <attachments/>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
